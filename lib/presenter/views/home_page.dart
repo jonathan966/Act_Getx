@@ -13,6 +13,7 @@ class HomePage extends GetView<HomeController> {
         ),
         bottomNavigationBar: Obx(
           () => BottomNavigationBar(
+            unselectedItemColor: Colors.black,
             currentIndex: controller.currentIndex.value,
             onTap: controller.changePage,
             selectedItemColor: Colors.redAccent,
@@ -20,6 +21,8 @@ class HomePage extends GetView<HomeController> {
             //  BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
               BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
               BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+              BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Settings'),
+              BottomNavigationBarItem(icon: Icon(Icons.help), label: 'Help'),
             ],
           ),
         ));
