@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:primerapp/presenter/controller/home_screen_controller.dart';
 import 'package:primerapp/presenter/controller/profile_controller.dart';
-import 'package:primerapp/presenter/controller/search_list_controller.dart';
+import 'package:primerapp/presenter/controller/login_controller.dart';
 import 'package:primerapp/presenter/controller/help_controller.dart';
 import 'package:primerapp/presenter/controller/setting_controller.dart';
 
@@ -19,10 +19,10 @@ class ProfileBinding extends Bindings {
   }
 }
 
-class SearchBinding extends Bindings {
+class LoginBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut<SearchPageController>(() => SearchPageController());
+    Get.lazyPut<LoginPageController>(() => LoginPageController());
   }
 }
 

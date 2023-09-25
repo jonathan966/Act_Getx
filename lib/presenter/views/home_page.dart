@@ -8,7 +8,7 @@ class HomePage extends GetView<HomeController> {
     return Scaffold(
         body: Navigator(
           key: Get.nestedKey(1),
-          initialRoute: '/Search',
+          initialRoute: '/Login',
           onGenerateRoute: controller.onGenerateRoute,
         ),
         bottomNavigationBar: Obx(
@@ -19,7 +19,7 @@ class HomePage extends GetView<HomeController> {
             selectedItemColor: Colors.redAccent,
             items: const [
             //  BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-              BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+              BottomNavigationBarItem(icon: Icon(Icons.login), label: 'Login'),
               BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
               BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Settings'),
               BottomNavigationBarItem(icon: Icon(Icons.help), label: 'Help'),
